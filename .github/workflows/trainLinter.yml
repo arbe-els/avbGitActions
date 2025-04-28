@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
-      - name: superlinter
-        uses: github/super-linter@v7
+        uses: actions/checkout@v4
+      - name: superlinter slim
+        uses: super-linter/slim@v7.6.0
         env:
           DEFAULT_BRANCH: main
-          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
