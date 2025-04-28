@@ -1,5 +1,8 @@
 name: First linter runner
 on: push
+permissions:
+  contents: read
+
 
 jobs:
   yamllint:
