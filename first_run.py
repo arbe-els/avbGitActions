@@ -1,4 +1,4 @@
-""" this is only for PyLint green light """
+"""this is only for PyLint green light"""
 
 
 def add_operation(a, b):
