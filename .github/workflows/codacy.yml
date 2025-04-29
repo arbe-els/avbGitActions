@@ -1,4 +1,4 @@
-name: Codacy Security Scan
+name: Security
 on:
   push:
     branches:

@@ -1,4 +1,4 @@
-name: First linter runner
+name: Linter
 on: push
 permissions:
   contents: read
