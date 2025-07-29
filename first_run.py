@@ -11,4 +11,5 @@ def subtract_operation(a, b):
     return a - b
 
 
-print("Pepsi Company")
+if __name__ == '__main__':
+    print("Pepsi Company")
