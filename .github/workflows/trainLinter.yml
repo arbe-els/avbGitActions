@@ -1,7 +1,7 @@
 name: Linter
 on: push
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   yamllint:
@@ -10,9 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Run Super-Linter
         uses: github/super-linter@v7
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIX_PYTHON_BLACK: true
