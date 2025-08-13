@@ -19,5 +19,6 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FIX_PYTHON_BLACK: true
+          VALIDATE_PYTHON_BLACK: true
           VALIDATE_PYTHON_PYLINT: true
           FIX_PYTHON_ISORT: true
