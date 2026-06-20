@@ -38,4 +38,4 @@ jobs:
 
       - name: Run Playwright script
         run: |
-          python avbGitActions/lordswm.py
+          python lordswm.py
